@@ -18,7 +18,7 @@ function order(words) {
 
   arr = words.split(" ");
   stack = Array(arr.length);
-  for (var i = 1; i < 10; i++) {
+  for (var i = 1; i < arr.length + 1; i++) {
     for (j in arr) {
       if (arr[j].includes(i)) {
         stack[i - 1] = arr[j];
